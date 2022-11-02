@@ -17,10 +17,6 @@ section {
   margin: 5rem;
 }
 
-p {
-  font-weight: 100;
-}
-
 a {
   color: black;
 }
@@ -313,7 +309,7 @@ body {
     display: inline;
   }
   p {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 0.8rem;
     text-align: center;
   }
@@ -348,7 +344,7 @@ body {
   padding: 2rem;
   justify-items: center;
   align-items: center;
-  /*background-color: rgb(210, 223, 228);*/
+  background-color: rgb(210, 223, 228);
   border-radius: 20px;
 }
 
@@ -369,28 +365,33 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
-@media (max-width: 800px) {
+
+@media (max-width: 950px) {
   .trio-box {
-    margin: 1rem 0;
-    padding: 1rem 0.5rem;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
   }
-  .trio-bio {
-    padding: 1rem;
-    margin: 0;
-  }
-  /*.trio-media {
-    margin: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 0.3rem;
-  }*/
   .trio-media {
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .trio-box {
+    margin: 1rem 0;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: none;
+  }
+  .trio-bio {
+    margin: 1px 0;
+    padding: 1rem;
+    margin: 0;
   }
 }
 
