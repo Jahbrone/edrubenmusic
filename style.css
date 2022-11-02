@@ -17,6 +17,10 @@ section {
   margin: 5rem;
 }
 
+p {
+  font-weight: 100;
+}
+
 a {
   color: black;
 }
@@ -45,20 +49,6 @@ h2 {
 }
 body {
   background-color: #eaeaec;
-}
-
-/*----------------------------------------------------------------------------------------------------*/
-
-.front-page {
-  /*background-image: url(/img/snowforestbackground.jpg);*/
-  background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55%, #eaeaec 100%),
-    url(/img/snowforestbackground.jpg);
-  min-height: 100vh;
-  min-width: 100vw;
-  background-position: center;
-  background-size: cover;
-  position: relative;
 }
 
 /*--------------nav bar------------- */
@@ -257,6 +247,20 @@ body {
 .trio-btn:hover::before {
   --scale: 1;
 }
+/*----------------------------------------------------------------------------------------------------*/
+
+.front-page {
+  /*background-image: url(/img/snowforestbackground.jpg);*/
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55%, #eaeaec 100%),
+    url(/img/snowforestbackground.jpg);
+  min-height: 100vh;
+  min-width: 100vw;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -3rem;
+}
 
 /*-----------front page bio------------*/
 
@@ -291,7 +295,7 @@ body {
   }
   .front-page {
     margin: 0.1rem;
-    padding: 0;
+    padding: 3rem 0;
   }
 
   .nav-bar {
@@ -309,7 +313,7 @@ body {
     display: inline;
   }
   p {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.8rem;
     text-align: center;
   }
@@ -318,7 +322,7 @@ body {
     padding-bottom: 1rem;
   }
   .headshot {
-    margin: 5rem auto;
+    margin: 2rem auto;
     display: block;
     text-align: center;
     max-width: 20vw;
@@ -327,7 +331,7 @@ body {
   }
   .edruben-bio {
     margin: 5rem auto;
-    padding: 5rem 0 0 0;
+    padding: 1rem 0;
     text-align: center;
   }
   .bio {
